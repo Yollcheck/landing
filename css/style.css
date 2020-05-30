@@ -1,0 +1,136 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --heading-color: #007765;
+  --primary-font-stack: 'Roboto', sans-serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  margin: 0;
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 60px;
+}
+body {
+  font-family: var(--primary-font-stack);
+}
+.banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--heading-color);
+  width: 100%;
+  height: 84px;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  list-style: none;
+}
+.nav-link {
+  display: block;
+  padding: 12px 12px;
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 24px;
+  text-decoration: none;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: grey;
+}
+li:nth-last-child(n + 2) .nav-link:before {
+  content: ' ';
+  background: var(--white-color);
+  width: 2px;
+  height: 25px;
+  float: right;
+  margin-left: 20px;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
+.jumbotron {
+  background-image: url(/img/image1.png);
+  background-position: top center;
+  background-size: cover;
+  padding: 15px 0;
+  min-height: 400px;
+}
+.head {
+  padding: 128px;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 85px;
+  text-align: center;
+  color: var(--white-color);
+  vertical-align: top;
+  padding: 25px;
+  margin: 160px 400px;
+
+  /* margin-bottom: 160px; */
+}
+.problem .pps {
+  background-color: #eeeeee;
+  padding-top: 60px;
+  padding-right: 450px;
+  padding-bottom: 95px;
+  padding-left: 450px;
+  margin-top: 0;
+}
+.title {
+  color: var(--heading-color);
+  margin: 0;
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: 500;
+}
+.message {
+  padding-top: 37px;
+  margin: 0;
+  font-size: 32px;
+  line-height: 37px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: left;
+}
+
+.container_hero {
+  box-sizing: border-box;
+  max-width: 1219px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+.hero {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  background-image: url(/img/image\(7\).png);
+  background-size: cover;
+  background-position: center center;
+}
+.hero__message {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: var(--white-color);
+}
+/* .pps {
+  padding-top: 60px;
+  padding-right: 450px;
+  padding-bottom: 95px;
+  padding-left: 450px;
+  text-align: center;
+  margin-top: 0;
+} */
