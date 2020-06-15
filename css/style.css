@@ -56,7 +56,7 @@ li:nth-last-child(n + 2) .nav-link:before {
   box-sizing: border-box;
 }
 .jumbotron {
-  background-image: url(landing/img/image1.png);
+  background-image: url(/landing/img/image1.png);
   background-position: top center;
   background-size: cover;
   padding: 15px 0;
@@ -107,7 +107,7 @@ li:nth-last-child(n + 2) .nav-link:before {
 .hero {
   padding-top: 128px;
   padding-bottom: 128px;
-  background-image: url(landing/img/image\(7\).png);
+  background-image: url(/landing/img/image\(7\).png);
   background-size: cover;
   background-position: center center;
 }
