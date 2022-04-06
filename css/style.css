@@ -19,32 +19,28 @@ body {
 .banner {
   position: fixed;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-color: var(--heading-color);
   width: 100%;
-  height: 84px;
+  height: 60px;
   align-items: center;
 }
-.nav {
+.main-menu {
   display: flex;
   list-style: none;
 }
-.nav-link {
-  display: block;
+nav a {
+  display: flow-root;
   padding: 12px 12px;
   color: var(--white-color);
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 300;
+  font-size: 17px;
   text-decoration: none;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: grey;
-}
-li:nth-last-child(n + 2) .nav-link:before {
+nav a:nth-last-child(n + 2):before {
   content: ' ';
-  background: var(--white-color);
+  background: white;
   width: 2px;
   height: 25px;
   float: right;
@@ -55,59 +51,62 @@ li:nth-last-child(n + 2) .nav-link:before {
   margin: auto;
   box-sizing: border-box;
 }
+section {
+  background-color: #eeeeee;
+  padding-top: 15px;
+  padding-right: 450px;
+  padding-bottom: 25px;
+  padding-left: 450px;
+}
 .jumbotron {
   background-image: url(../img/image1.png);
   background-position: top center;
   background-size: cover;
   padding: 15px 0;
-  min-height: 400px;
+  /* min-height: 400px; */
 }
 .head {
-  padding: 128px;
-  font-weight: 500;
-  font-size: 72px;
-  line-height: 85px;
+  font-weight: 300;
+  font-size: 71px;
+  line-height: 1.2;
   text-align: center;
   color: var(--white-color);
   vertical-align: top;
-  padding: 25px;
-  margin: 160px 400px;
-
-  /* margin-bottom: 160px; */
+  /* padding: 25px; */
+  margin: 86px 335px;
 }
-.problem {
+/* .problem {
   background-color: #eeeeee;
   padding-top: 15px;
   padding-right: 50px;
   padding-bottom: 5px;
   padding-left: 50px;
-  margin-top: 50px;
-}
+} */
 .title {
   color: var(--heading-color);
   padding-bottom: 10px;
-  font-size: 55px;
+  font-size: 45px;
   line-height: 1.5;
   font-weight: 500;
   padding-top: 100px;
   margin-top: -80px;
 }
 .message {
-  padding-bottom: 10px;
-  margin: 0;
-  font-size: 20px;
-  line-height: 1.2;
-  max-width: 80%;
-  margin: auto;
-  text-align: left;
-  padding-top: 15px;
-  padding-right: 50px;
-  padding-left: 50px;
+    /* padding-top: 15px; */
+    /* padding-right: 180px; */
+    /* padding-bottom: 10px; */
+    /* padding-left: 180px; */
+    /* margin: 0; */
+    font-size: 18px;
+    line-height: 1.2;
+    max-width: 100%;
+    /* margin: auto; */
+    text-align: left;
 }
 .hero {
-  padding-top: 128px;
-  padding-bottom: 128px;
-  background-image: url(/landing/img/image\(7\).png);
+  /* padding-top: 128px;
+  padding-bottom: 128px; */
+  background-image: url(../img/image\(7\).png);
   background-size: cover;
   background-position: center center;
 }
@@ -123,31 +122,33 @@ li:nth-last-child(n + 2) .nav-link:before {
 
 .hero__message {
   font-style: italic;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 56px;
-  text-align: center;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    text-align: center;
   color: var(--white-color);
 }
 .pps {
   background-color: var(--white-color);
-  padding-top: 60px;
-  padding-right: 450px;
-  padding-bottom: 95px;
-  padding-left: 450px;
-  margin-top: 0;
+    padding-top: 30px;
+    padding-right: 475px;
+    padding-bottom: 30px;
+    padding-left: 450px;
+    margin-top: 0;
 }
 .logo {
-  width: 110px;
-  height: 110px;
+  width: 80px;
+  height: 80px;
   float: left;
-  margin-right: 45px;
+  margin-top: -8px;
+  /* margin-left: 210px; */
+  padding-right: 30px;
 }
 .team {
   background-color: #eeeeee;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-right: 450px;
-  padding-bottom: 95px;
+  padding-bottom: 60px;
   padding-left: 450px;
   margin-top: 0;
 }
@@ -158,21 +159,21 @@ li:nth-last-child(n + 2) .nav-link:before {
 }
 .partner {
   text-align: center;
-  flex-basis: 33%;
-  padding: 24px;
-  box-sizing: border-box;
-  margin-bottom: 30px;
+    flex-basis: 32%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 .partner-name {
   margin: 0;
   margin-top: 12px;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   color: var(--heading-color);
 }
 .partner-role {
   font-style: italic;
-  font-size: 18px;
+  font-size: 13px;
 }
 .footer {
   background: #333333;
@@ -180,12 +181,12 @@ li:nth-last-child(n + 2) .nav-link:before {
   height: 176px;
 }
 .text {
-  padding-bottom: 37px;
-  font-size: 18px;
-  line-height: 21px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  line-height: 1.5;
   color: var(--white-color);
-  max-width: 540px;
+  max-width: 23%;
   margin: auto;
   text-align: center;
-  padding-top: 55px;
+  padding-top: 38px;
 }

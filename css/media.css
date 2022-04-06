@@ -3,20 +3,7 @@
     /* max-width: 615px; */
     font-size: 8px;
   }
-  .nav {
-    align-items: baseline;
-  }
-  li:nth-last-child(n + 2) .nav-link:before {
-    content: ' ';
-    background: var(--white-color);
-    width: 2px;
-    height: 25px;
-    float: right;
-    margin-left: 10px;
-  }
-  .nav-link {
-    font-size: 16px;
-  }
+
   .head {
     font-size: 24px;
     line-height: 30px;
