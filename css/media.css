@@ -6,9 +6,18 @@
 
   .head {
     font-size: 24px;
-    line-height: 30px;
+    line-height: 50px;
     margin: 120px 90px;
   }
+
+  section {
+    background-color: #eeeeee;
+    padding-top: 15px;
+    padding-right: 135px;
+    padding-bottom: 25px;
+    padding-left: 135px;
+  }
+
   .jumbotron {
     min-height: 300px;
     /* max-width: 615px; */
